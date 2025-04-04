@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sal's</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6347c909df.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="landing">
+      <div class="landing__background">
+        <figure class="landing__background--wrapper">
+          <div class="nav__content">
+            <div class="nav__left">
+              <div class="nav__logo__wrapper">
+                <img src="assets/Logo.png" alt="" class="nav__logo__image" />
+              </div>
+              <div class="nav__links">
+                <a href="#home" class="nav__link">Home</a>
+                <a href="#contact" class="nav__link">Contact</a>
+              </div>
+            </div>
+            <div class="nav__right">
+              <div id="search__container" class="search__container">
+                <button id="search__button" class="search__button">
+                  <i
+                    class="fa-solid fa-magnifying-glass search__button__icon"
+                  ></i>
+                </button>
+                <input
+                  type="search"
+                  id="search__input"
+                  class="search__input"
+                  placeholder="Search..."
+                />
+              </div>
+              <span class="nav__settings">
+                <i class="fa-solid fa-gear"></i>
+              </span>
+            </div>
+          </div>
+          <img
+            src="assets/landing-background-image.jpg"
+            alt=""
+            class="landing__background--img"
+          />
+          <div class="landing__background__content">
+            <h1 class="landing__background__title">Sal's</h1>
+            <h2 class="landing__background__subtitle">
+              Explore and shop the latest in urban culture
+            </h2>
+            <form>
+              <div class="landing__background__search">
+                <i
+                  class="fa-solid fa-magnifying-glass landing__background__search__icon"
+                ></i>
+                <input
+                  type="search"
+                  class="landing__background__search__input"
+                  id="landing__background__search__input"
+                  placeholder="Search..."
+                />
+              </div>
+            </form>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <section id="products">
+      <div class="products__container">
+        <div class="row products__row">
+          <div class="products__content">
+            <div class="products__top">
+              <h2 class="products__top--title">Search results for:</h2>
+              <h2 class="products__search--results"></h2>
+            </div>
+            <div id="all-products-list" class="products__list">
+              <i class="fa-solid fa-spinner products__list__spinner"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
